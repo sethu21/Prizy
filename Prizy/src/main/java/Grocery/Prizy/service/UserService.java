@@ -33,4 +33,8 @@ public class UserService {
         // Delete the user
         userRepository.deleteByEmail(email);
     }
+
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Success</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Registration Successful</h2>
+    <p>User registered successfully!</p>
+    <p th:text="'Username: ' + ${user.username}"></p>
+    <p th:text="'Email: ' + ${user.email}"></p>
+    <a href="/users/register" class="btn btn-primary">Register Another User</a>
+</div>
+</body>
+</html>
